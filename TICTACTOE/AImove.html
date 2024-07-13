@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        .board {
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2vmin;
+        }
+        .cell {
+            height:18vmin ;
+            width: 18vmin;
+            border-radius: 1.5rem;
+            box-shadow: 0 0 1rem rgba(0,0, 0, 0.5);
+            font-size: 8vmin;
+            color: blue;
+            cursor: pointer;
+            align-content: center;
+        }
+    </style>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+    <div class="msgcon hide">
+        <p id="msg">Winner</p>
+        <button id="newGame">New Game</button>
+    </div>
+    <main>
+        <h1>TIC-TAC-TOE</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+    </main>
+    <a href="Home.html">
+        <button id="Back">Back</button>
+    </a>
+    
+    <button class="reset">Reset</button>
+    <script src="ai.js"></script>
+</body>
+</html>
